@@ -26,8 +26,7 @@ public class CyclicRotation {
     }
 
     private int[] getIntArrayFrom(final LinkedList<Integer> list) {
-        return list
-            .stream()
+        return list.stream()
             .filter(Objects::nonNull)
             .mapToInt(i -> i)
             .toArray();
