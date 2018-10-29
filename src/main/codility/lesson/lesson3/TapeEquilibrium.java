@@ -1,5 +1,6 @@
 package codility.lesson.lesson3;
 
+import static java.lang.Integer.MAX_VALUE;
 import static java.lang.Math.abs;
 import static java.lang.Math.min;
 
@@ -7,7 +8,7 @@ public class TapeEquilibrium {
 
     public int solution(final int[] a) {
         int sum = getSum(a),
-            min = Integer.MAX_VALUE;
+            min = MAX_VALUE;
 
         for (int i = 1; i < a.length; i++) {
             sum -= a[i - 1] * 2;
