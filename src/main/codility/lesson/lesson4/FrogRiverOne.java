@@ -19,12 +19,12 @@ public class FrogRiverOne {
         return -1;
     }
 
-    private void initSteps(int x) {
+    private void initSteps(final int x) {
         set = new HashSet<>();
         steps = x;
     }
 
-    private void goNextStep(int num) {
+    private void goNextStep(final int num) {
         if (set.add(num)) {
             steps--;
         }
