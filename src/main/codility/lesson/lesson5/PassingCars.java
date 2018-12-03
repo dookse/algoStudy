@@ -5,8 +5,7 @@ public class PassingCars {
     private static final int EAST = 0, WEST = 1;
 
     public int solution(final int[] a) {
-        int eastCars = 0;
-        int passingCounts = 0;
+        int eastCars = 0, passingCounts = 0;
 
         for (final int car : a) {
             if (car == WEST) {
